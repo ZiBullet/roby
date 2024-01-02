@@ -1,0 +1,124 @@
+.main__work {
+    padding-bottom: 210px;
+}
+
+.main__work__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main__work__title {
+    text-transform: uppercase;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.main__work__title span {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 51px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 1px;
+}
+
+.main__work__cards {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main__work__cards-card {
+    width: 470px;
+    height: 578px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    transition: var(--trans);
+}
+.main__work__cards-card:hover {
+    scale: 1.05;
+    transform: translateX(-40px);
+}
+.main__work__cards-card:nth-child(2n) {
+    transform: translateY(100px);
+}
+.main__work__cards-card:nth-child(2n):hover {
+    transform: translate(40px, 100px);
+}
+.main__work__cards-card-img {
+    width: 100%;
+    height: 502px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main__work__cards-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__work__cards-card-img-desc {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background: #00000047;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    transition: var(--trans);
+}
+
+.main__work__cards-card-img-desc-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.main__work__cards-card-img-desc-text {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+.main__work__cards-card:hover .main__work__cards-card-img-desc {
+    top: 0;
+}
+
+.main__work__cards-card-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.main__work__cards-card-desc-title {
+    text-transform: uppercase;
+    color: #000;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.main__work__cards-card-desc-text {
+    color: var(--clr-grey);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
