@@ -36,6 +36,35 @@
     border-bottom: 1px solid transparent;
     transition: var(--trans);
 }
+
 .header__nav-email-link:hover {
     border-bottom: var(--brd);
+}
+
+.header__nav-logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__nav-list-item-link {
+    color: #000;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+.header__nav-list-item-link span {
+    display: none;
+}
+.header__nav-list-item-link span b {
+    color: var(--clr-grey);
 }
