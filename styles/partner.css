@@ -1,0 +1,28 @@
+.main__partner {
+    padding: 120px 0;
+}
+
+.main__partner__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.main__partner__title {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.main__partner__title span {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.main__partner__companies {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
