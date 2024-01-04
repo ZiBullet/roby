@@ -17,6 +17,7 @@
 }
 
 .main__brand__desc-title {
+    text-transform: uppercase;
     max-width: 428px;
     width: 100%;
     font-family: "Roboto-Bold", sans-serif;
@@ -45,6 +46,7 @@
 }
 
 .main__brand__desc-text-block-title {
+    text-transform: uppercase;
     display: flex;
     gap: 10px;
     font-family: "Roboto-Bold", sans-serif;
