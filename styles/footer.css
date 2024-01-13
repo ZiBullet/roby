@@ -7,6 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
     margin-bottom: 60px;
 }
 
@@ -40,6 +42,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 30px;
 }
 
@@ -169,4 +173,31 @@
 .footer__powered a:hover {
     color: #000;
     border-bottom: var(--brd);
+}
+@media screen and (max-width: 340px) {
+    .footer__logo {
+        justify-content: center;
+    }
+    .footer__content {
+        text-align: center;
+        justify-content: center;
+    }
+    .footer__content-address {
+        text-align: center;
+        align-items: center;
+    }
+    .footer__content-nav {
+        align-items: center;
+    }
+    .footer__content-nav-list {
+        text-align: center;
+        align-items: center;
+    }
+    .footer__content-contacts {
+        text-align: center;
+        align-items: center;
+    }
+    .footer__powered {
+        text-align: center;
+    }
 }
