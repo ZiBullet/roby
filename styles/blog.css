@@ -14,21 +14,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
 }
 
 .main__blog__desc-title {
     text-transform: uppercase;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 60px;
+    font-size: clamp(2.188rem, 1.619rem + 2.841vw, 3.75rem);
     font-weight: 700;
-    line-height: 72px;
+    line-height: clamp(3.438rem, 3.043rem + 1.943vw, 4.5rem);
 }
 
 .main__blog__desc-title span {
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 57px;
+    font-size: clamp(1.875rem, 1.239rem + 3.182vw, 3.625rem);
     font-weight: 400;
-    line-height: 72px;
+    line-height: clamp(3.438rem, 3.043rem + 1.943vw, 4.5rem);
     letter-spacing: 1px;
 }
 
@@ -64,6 +65,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .main__blog__cards-card {
@@ -80,6 +83,11 @@
     scale: 1.05;
 }
 .main__blog__cards-card-img {
+    max-width: 374px;
+    width: 100%;
+    max-height: 384px;
+    height: 100%;
+    object-fit: cover;
     transition: var(--trans);
 }
 .main__blog__cards-card:hover .main__blog__cards-card-img {
@@ -113,7 +121,7 @@
     text-transform: uppercase;
     color: #000;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 26px;
+    font-size: clamp(1rem, 0.773rem + 1.136vw, 1.625rem);
     font-weight: 700;
     line-height: 31px;
     margin-bottom: 30px;
@@ -121,7 +129,35 @@
 
 .main__blog__cards-card-desc-text {
     color: #8f8f8f;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+}
+@media screen and (max-width: 1280px) {
+    .main__blog__cards {
+        justify-content: center;
+    }
+    .main__blog__cards-card {
+        height: max-content;
+        justify-content: center;
+        gap: 15px;
+    }
+    .main__blog__cards-card-desc-title {
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 1028px) {
+    .main__blog__cards-card-desc {
+        text-align: center;
+        align-items: center;
+    }
+    .main__blog__cards-card:hover {
+        scale: none;
+    }
+    .main__blog__cards-card:hover .main__blog__cards-card-img {
+        box-shadow: none;
+    }
+    .main__blog__cards-card:hover .main__blog__cards-card-desc-category {
+        transform: none;
+    }
 }

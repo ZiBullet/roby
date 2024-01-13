@@ -1,4 +1,5 @@
 .main__talk {
+    padding: 15px 0;
     background: #020A0C;
     height: 340px;
 }
@@ -7,12 +8,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .main__talk__desc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: center;
     gap: 30px;
 }
 
@@ -20,9 +24,9 @@
     text-transform: uppercase;
     color: #fff;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 94px;
+    font-size: clamp(4.063rem, 3.403rem + 3.295vw, 5.875rem);
     font-weight: 700;
-    line-height: 94px;
+    line-height: clamp(4.063rem, 3.403rem + 3.295vw, 5.875rem);
 }
 
 .main__talk__desc-title span {
@@ -58,4 +62,15 @@
 }
 .main__talk__link:hover {
     scale: 1.08;
+}
+@media screen and (max-width: 550px) {
+    .main__talk {
+        height: max-content;
+    }
+    .main__talk__wrap {
+        justify-content: center;
+    }
+    .main__talk__desc {
+        align-items: center;
+    }
 }
