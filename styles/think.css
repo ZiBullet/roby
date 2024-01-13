@@ -10,18 +10,19 @@
 }
 
 .main__think__title {
+    text-align: center;
     text-transform: uppercase;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 60px;
+    font-size: clamp(1.875rem, 1.33rem + 2.727vw, 3.375rem);
     font-weight: 700;
-    line-height: 72px;
+    line-height: clamp(3.438rem, 3.043rem + 1.943vw, 4.5rem);
 }
 
 .main__think__title span {
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 42px;
+    font-size: clamp(1.875rem, 1.33rem + 2.727vw, 3.375rem);
     font-weight: 400;
-    line-height: 72px;
+    line-height: clamp(3.438rem, 3.043rem + 1.943vw, 4.5rem);
     letter-spacing: 1px;
 }
 
@@ -42,7 +43,8 @@
 }
 .main__think__comments-box {
     min-width: 460px;
-    height: 348px;
+    /* max-height: 348px;
+    height: 100%; */
     border: #ffffff94;
     border-radius: 5px;
     padding: 35px 50px 30px;
@@ -60,7 +62,7 @@
 
 .main__think__comments-box-text {
     margin-bottom: 28px;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.593rem + 2.286vw, 1.25rem);
     font-weight: 400;
     line-height: 26px;
 }
@@ -79,4 +81,12 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 22px;
+    padding: 15px;
+}
+@media screen and (max-width: 520px) {
+    .main__think__comments-box {
+        opacity: .8;
+        min-width: 285px;
+        padding: 15px;
+    }
 }
