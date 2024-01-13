@@ -21,7 +21,7 @@
     max-width: 428px;
     width: 100%;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 48px;
+    font-size: clamp(1.875rem, 1.466rem + 2.045vw, 3rem);
     font-weight: 700;
     line-height: 53px;
     letter-spacing: 1px;
@@ -30,7 +30,7 @@
 
 .main__brand__desc-title span {
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 48px;
+    font-size: clamp(1.875rem, 1.466rem + 2.045vw, 3rem);
     font-weight: 400;
     line-height: 53px;
     letter-spacing: 1px;
@@ -85,5 +85,19 @@
     } 100% {
         right: 0;
         opacity: 1;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main__brand__desc {
+        text-align: center;
+        align-items: center;
+    }
+    .main__brand__desc-text-block {
+        align-items: center;
+    }
+    .main__brand__img {
+        z-index: -1;
+        animation: none;
+        opacity: 0.2;
     }
 }
