@@ -11,17 +11,18 @@
 
 .main__work__title {
     text-transform: uppercase;
+    text-align: center;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 60px;
+    font-size: clamp(2.188rem, 1.619rem + 2.841vw, 3.75rem);
     font-weight: 700;
-    line-height: 72px;
+    line-height: clamp(3.438rem, 3.043rem + 1.943vw, 4.5rem);
 }
 
 .main__work__title span {
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 51px;
+    font-size: clamp(1.875rem, 1.42rem + 2.273vw, 3.125rem);
     font-weight: 400;
-    line-height: 72px;
+    line-height: clamp(3.438rem, 3.043rem + 1.943vw, 4.5rem);
     letter-spacing: 1px;
 }
 
@@ -30,6 +31,7 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -56,7 +58,8 @@
 }
 .main__work__cards-card-img {
     width: 100%;
-    height: 502px;
+    max-height: 502px;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -121,4 +124,16 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
+}
+@media screen and (max-width: 995px) {
+    .main__work__cards-card:nth-child(2n) {
+        transform: none;
+    }
+    .main__work__cards-card-img-desc {
+        display: none;
+    }
+    .main__work__cards-card:hover {
+        transform: none;
+        scale: none;
+    }
 }
