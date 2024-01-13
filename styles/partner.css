@@ -11,6 +11,7 @@
 }
 
 .main__partner__title {
+    text-align: center;
     text-transform: uppercase;
     font-size: 27px;
     font-weight: 400;
@@ -24,5 +25,16 @@
 .main__partner__companies {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
+}
+.main__partner__companies img {
+    max-width: 1024px;
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 720px) {
+    .main__partner__wrap {
+        gap: 15px;
+    }
 }
